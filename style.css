@@ -1,0 +1,448 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section_Container {
+    max-width: 1300px;
+    margin: auto;
+}
+
+.header img {
+    width: 100px;
+}
+
+
+.header {
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+}
+
+.logo {
+    width: 30%;
+    margin-top: 5px;
+}
+
+.menu {
+    width: 70%;
+}
+
+.main_Menu {}
+
+.main_Menu ul {
+    margin-bottom: 0px;
+    text-align: right;
+}
+
+.main_Menu ul li {
+    display: inline-block;
+    list-style: none;
+    position: relative;
+}
+
+.main_Menu ul li a {
+    display: inline-block;
+    color: white;
+    margin-left: -5px;
+    padding: 0px 30px;
+    font-size: 20px;
+    line-height: 72px;
+}
+
+.main_Menu ul li a:hover {}
+
+.dropdown {
+    width: 230px;
+    background: black;
+    text-align: center !important;
+    border-radius: 0px 0px 10px 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: .7s;
+    transform: scaleY(0);
+    transform-origin: top center;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.main_Menu ul li:hover ul {
+    transform: scaleY(1);
+    visibility: visible;
+    opacity: 1;
+
+}
+
+
+.dropdown li {
+    list-style: none;
+    display: block !important;
+}
+
+.dropdown li a {
+    display: block !important;
+    line-height: 54px !important;
+    border-bottom: 1px solid white;
+    margin-left: 0px !important;
+    transition: .5s;
+}
+
+.last_opt {
+    border-bottom: none !important;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.dropdown li a:hover {
+    background: #4e4e4e;
+}
+
+
+
+.banner {
+    padding: 200px 0px;
+    background-image: url('https://i.ibb.co/9wW9Tgz/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner h1 {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.banner h4 {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 0px;
+}
+
+.banner a {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: .5s;
+
+}
+
+.black {
+    background: black;
+    color: white;
+    margin-right: 20px;
+}
+
+.white {
+    background: white;
+    color: black;
+}
+
+.black:hover {
+    background: white;
+    color: black;
+}
+
+.white:hover {
+    background: black;
+    color: white;
+}
+
+.title_Container {
+    text-align: center;
+}
+
+.section_Title {
+    color: white;
+    font-size: 50px;
+    text-shadow: 0px 0px 7px white;
+    text-align: center;
+    font-weight: 700;
+    border-bottom: 4px solid white;
+    max-width: fit-content;
+    margin: 0px auto 50px auto;
+
+
+}
+
+.about {
+    background: #87a471;
+    padding: 30px 0px;
+}
+
+
+
+.about_Left {
+    max-width: 50%;
+    color: white;
+    padding: 79px 0px 79px 0px;
+    line-height: 31px;
+    margin-left: 116px;
+    font-size: 22px;
+}
+
+.about_Right {
+    max-width: 50%;
+}
+
+.about_Right img {
+    max-width: 75%;
+}
+
+
+.I_Do {
+    background: #606a64;
+    padding: 100px 0px;
+    color: white;
+}
+
+.I_Do h4 {
+    font-size: 35px;
+    margin-top: -25px;
+}
+
+.info {
+    max-width: 690px;
+    margin: auto;
+    line-height: 30px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+.service_Card {
+    padding: 30px 20px;
+    width: 27%;
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    margin-right: 123px;
+    min-height: 150px;
+    background: white;
+}
+
+.last_Card {
+    margin-right: 0px !important;
+}
+
+
+
+.icon {
+    width: 20%;
+
+}
+
+.icon span {
+    color: #00bc9c;
+    font-size: 50px;
+}
+
+.text {
+    width: 80%;
+    margin-top: 10px;
+}
+
+
+.text h3 {
+    font-size: 30px;
+    color: black;
+}
+
+.text p {
+
+    color: gray;
+
+    font-weight: 500;
+
+    line-height: 25px;
+
+    font-size: 18px;
+
+    margin-top: 18px;
+}
+
+
+.check {
+    background: #87a471;
+    padding: 100px 0px;
+    color: white;
+}
+
+
+.checkout_Container {
+    max-width: 1100px;
+    margin: auto;
+
+}
+
+.common {
+    width: 47%;
+    border: 1px solid white;
+    padding-bottom: 20px;
+
+}
+
+
+
+.common img {
+    width: 100%;
+}
+
+.common h3 {
+    color: #4f5885;
+    font-weight: bold;
+    padding: 10px 0px;
+}
+
+.common b {
+    color: white;
+
+}
+
+
+.last_Container {
+    margin-top: 45px;
+}
+
+.check_Photo {
+    max-width: 23%;
+    margin-right: 29px;
+}
+
+.last_Photo {
+    margin-right: 0px !important;
+}
+
+.check_Photo img {
+    width: 100%;
+}
+
+
+.teams {
+    padding: 100px 0px;
+    background: #5b9776;
+}
+
+
+
+.teams h1 {
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+hr {
+    width: 339px;
+    height: 2px;
+    background: white;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.teams_Photo{
+    max-width: 31%;
+    margin-right: 38px;
+}
+
+
+.teams_Photo a{
+    font-size: 35px;
+    color: white;
+    margin-right: 10px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.teams_Photo img{
+    width: 100%;
+}
+
+
+.work{
+    padding: 100px 0px;
+    background: #606a64;
+    color: white;
+    text-align: center;
+}
+
+.work h1{
+    font-size: 40px;
+
+}
+
+.info2{
+    max-width: 690px;
+    margin: auto;
+    line-height: 30px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.work a{
+   display: inline-block;
+   background: #00bc9c;
+   color: white;
+   padding: 15px 30px;
+   border-radius: 5px;
+   transition: .5s;
+ 
+}
+
+
+.work a:hover{
+    background: #028b75;
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 25px 0px;
+}
+
+footer p{
+    text-align: center;
+    font-size: 18px;
+}
